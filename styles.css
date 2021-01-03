@@ -1,0 +1,174 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  color: hsl(240, 38%, 20%);
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  min-height: 101vh;
+  background: url(./images/pattern-curve.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
+.img-div {
+  position: relative;
+  margin: 1.5rem 1.5rem 1rem;
+  background: url(./images/pattern-bg.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 500px;
+}
+
+.img-container {
+  padding: 1.875rem 2.25rem 2.0625rem;
+}
+.slider {
+  width: 24%;
+  max-width: 100px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 0.89rem 1.07rem;
+  border-radius: 28px;
+  line-height: 0;
+  text-align: left;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.slider img {
+  height: 11.5px;
+}
+
+img + img {
+  position: absolute;
+  right: 1.1rem;
+  margin-left: 50px;
+}
+
+.text-div {
+  padding: 0 2rem;
+  background: url(./images/pattern-quotes.svg);
+  background-repeat: no-repeat;
+  background-size: 15%;
+  background-position: top center;
+}
+
+.quote {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  padding: 1.4rem 0 1.25rem;
+}
+
+.name,
+.role {
+  font-size: 0.9375rem;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.role {
+  font-weight: 500;
+  color: hsl(240, 18%, 77%);
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 500px) {
+  .container {
+    padding: 0 2em;
+  }
+
+  .img-div {
+    margin: 1.5rem auto;
+  }
+}
+
+@media (min-width: 1100px) {
+  main {
+    display: flex;
+    max-width: 1500px;
+    text-align: left;
+    background-position: left bottom;
+    background-size: unset;
+  }
+
+  .container {
+    padding-left: 8.3125rem;
+  }
+
+  .img-div {
+    order: 1;
+    width: 50%;
+    align-self: center;
+    max-width: unset;
+    padding: 2rem;
+    margin-right: 3rem;
+  }
+
+  .slider {
+    bottom: 55px;
+    left: 28%;
+    padding: 1.1rem 1.07rem;
+  }
+
+  .slider img {
+    height: unset;
+  }
+
+  .text-div {
+    width: 50%;
+    align-self: center;
+    background-size: 20%;
+    background-position: 50% 0%;
+    padding-top: 2rem;
+  }
+
+  .quote {
+    position: relative;
+    width: 155%;
+    font-size: unset;
+    line-height: unset;
+    z-index: 4;
+  }
+
+  .name,
+  .role {
+    font-size: 1.25rem;
+    display: inline;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
